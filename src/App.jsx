@@ -3,6 +3,7 @@ import './App.css';
 import Layout from './Layout';
 import ErrorPage from './ErrorPage';
 import Home from './Home';
+import Time from './Time';
 
 const router = createBrowserRouter([
   {
@@ -12,6 +13,11 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Home />,
+      },
+      {
+        path: 'time',
+        element: <Time />,
+        loader: () => fetch('/api/getTime')
       },
       {
         path: '*',
