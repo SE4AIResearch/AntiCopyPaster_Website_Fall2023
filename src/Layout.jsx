@@ -7,7 +7,7 @@ export default function Layout() {
       <ul>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/resources">Resources</Link></li>
-        <li><Link to="/tasks">Tasks</Link></li>
+        <li><Link to="/sprints">Sprints</Link></li>
         <li><Link to="/time">Time Tracking</Link></li>
       </ul>
     </nav>

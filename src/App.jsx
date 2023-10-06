@@ -15,6 +15,11 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
+        path: 'sprints',
+        element: <Sprints />,
+        loader: () => fetch('/api/getSprints')
+      },
+      {
         path: 'time',
         element: <Time />,
         loader: () => fetch('/api/getTime')
