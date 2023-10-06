@@ -4,7 +4,7 @@ a.resource {
   border-radius: .25rem;
   border: 1px solid black;
   padding: .25rem .5rem;
-  display: block;
+  display: inline-block;
 }
 
 a.resource:not(:last-child) {

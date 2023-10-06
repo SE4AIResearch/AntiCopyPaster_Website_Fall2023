@@ -1,5 +1,6 @@
 import { useMemo } from "react";
 import { useLoaderData } from "react-router-dom";
+import "./Time.css";
 
 const oneWeek = 60*60*24*1000*7;
 
@@ -13,7 +14,9 @@ export default function Time() {
     return Math.min(lastRow + 1, data.length);
   }, [data]);
 
-  return (
+  return (<>
+    <h1>Weekly Time Commitments</h1>
+    <p>Time counted by the hour.</p>
     <table>
       <thead>
         <tr>
@@ -32,5 +35,5 @@ export default function Time() {
         )}
       </tbody>
     </table>
-  );
+  </>);
 };
