@@ -7,3 +7,15 @@ html, body {
 main {
   padding: 1rem;
 }
+
+h1:has(+ .subtitle) {
+  margin-bottom: .5rem;
+}
+
+h1 + .subtitle {
+  margin-top: 0;
+}
+
+.center {
+  text-align: center;
+}
