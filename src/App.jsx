@@ -4,6 +4,8 @@ import Layout from './Layout';
 import ErrorPage from './ErrorPage';
 import Home from './Home';
 import Time from './Time';
+import Sprints from './Sprints';
+import Resources from './Resources';
 
 const router = createBrowserRouter([
   {
@@ -13,6 +15,11 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Home />,
+      },
+      {
+        path: 'resources',
+        element: <Resources />,
+        loader: () => fetch('/api/getResources')
       },
       {
         path: 'sprints',
