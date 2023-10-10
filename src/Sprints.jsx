@@ -1,10 +1,23 @@
 import { useLoaderData } from "react-router-dom";
+import "./Sprints.css";
 
 export default function Sprints() {
   const data = useLoaderData();
 
   return (<>
-    <p>Sprints will be here.</p>
-    <pre>{JSON.stringify(data)}</pre>
+    {Object.keys(data).map(sprint =>
+      <div className="sprint" key={sprint}>
+        <h1>Sprint {sprint}</h1>
+        <div className="tasks">
+          {data[sprint].map(({ status, task, assignees }) =>
+            <div className="task" data-status={status} key={task}>
+              <span className="tag">{status}</span>
+              <h2>{task}</h2>
+              <p>{assignees.join(', ')}</p>
+            </div>
+          )}
+        </div>
+      </div>
+    )}
   </>);
 };

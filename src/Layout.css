@@ -3,19 +3,19 @@ nav {
   color: white;
 }
 
-ul {
+nav ul {
   margin: 0;
   padding: 0;
   display: flex;
   list-style-type: none;
 }
 
-li:hover > a {
+nav li:hover > a {
   color: rgb(153, 153, 214);
   transform: translateY(-2px);
 }
 
-li > a {
+nav li > a {
   display: inline-block;
   color: inherit;
   text-decoration: none;
