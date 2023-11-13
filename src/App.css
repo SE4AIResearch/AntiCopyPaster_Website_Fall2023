@@ -19,3 +19,18 @@ h1 + .subtitle {
 .center {
   text-align: center;
 }
+
+.bubble {
+  background-color: #efefef;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.32);
+  padding: 1rem;
+}
+
+.bubble:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.bubble h1 {
+  margin: 0 0 .5rem 0;
+  font-size: 1.5rem;
+}

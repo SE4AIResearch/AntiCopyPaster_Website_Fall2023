@@ -6,7 +6,7 @@ export default function Sprints() {
 
   return (<>
     {Object.keys(data).map(sprint =>
-      <div className="sprint" key={sprint}>
+      <div className="bubble" key={sprint}>
         <h1>Sprint {sprint}</h1>
         <div className="tasks">
           {data[sprint].map(({ status, task, assignees }) =>

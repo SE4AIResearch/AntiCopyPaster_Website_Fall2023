@@ -6,6 +6,7 @@ import Home from './Home';
 import Time from './Time';
 import Sprints from './Sprints';
 import Resources from './Resources';
+import Todo from './Todo';
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,11 @@ const router = createBrowserRouter([
         path: 'sprints',
         element: <Sprints />,
         loader: () => fetch('/api/getSprints')
+      },
+      {
+        path: 'todo',
+        element: <Todo />,
+        loader: () => fetch('/api/getTodo')
       },
       {
         path: 'time',
