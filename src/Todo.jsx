@@ -1,10 +1,11 @@
 import { useLoaderData } from "react-router-dom";
+import "./Todo.css";
 
 export default function Todo() {
   const data = useLoaderData();
 
   return (<>
-    <h1>Future TODOs</h1>
+    <h1>Future To-Do's</h1>
     <p>
       These tasks haven't been scheduled for implementation yet,
       but are important nonetheless. 
