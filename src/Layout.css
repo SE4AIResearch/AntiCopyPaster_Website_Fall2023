@@ -1,6 +1,6 @@
 nav {
-  background: #333333;
-  color: white;
+  background: rgb(249, 249, 249);
+  border-bottom: 2px solid rgb(203, 203, 203);
 }
 
 nav ul {

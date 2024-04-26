@@ -1,11 +1,11 @@
 export default function Home() {
   return (
     <div className="container">
-      <h1 className="center">AntiCopyPaster Plugin</h1>
+      <h1 className="center site-title">AntiCopyPaster Plugin</h1>
       <p className="subtitle center">
         Fall 2023 &rarr; Spring 2024 Extensions
       </p>
-      <h2>About</h2>
+      <h2 className="title">About</h2>
       <p>
         AntiCopyPaster is
         an <a href="https://www.jetbrains.com/idea/">IntelliJ</a> plugin
@@ -14,7 +14,7 @@ export default function Home() {
         segment, it scans your active file for duplicates and suggests
         refactoring if appropriate.
       </p>
-      <h2>Our Improvements</h2>
+      <h2 className="title">Our Improvements</h2>
       <p>
         We expanded the capabilities of ACP from the type one and partial type
         two extraction support provided by the built-in IntelliJ extractor to
@@ -23,7 +23,7 @@ export default function Home() {
         which functions by traversing the code's abstract syntax tree to look for
         a specific set of code patterns and structures.
       </p>
-      <h3>New Extraction Flow</h3>
+      <h3 className="title">New Extraction Flow</h3>
       <p>
         After pasting a code segment, if its <a href="#judgement">worthy of
         extraction</a>, a notification will show up.
@@ -43,13 +43,13 @@ export default function Home() {
         extracted method.
       </p>
       <img src="/img/naming.png" />
-      <h3>Sample - Type One</h3>
+      <h3 className="title">Sample - Type One</h3>
       <p>
         The sample below shows an example of an automatic extraction of a type
         1a, 2b, and 1c clone:
       </p>
       <img src="/img/typeOne.png" />
-      <h3>Settings</h3>
+      <h3 className="title">Settings</h3>
       <p>
         In order to give the user more control, several new settings were
         introduced:
