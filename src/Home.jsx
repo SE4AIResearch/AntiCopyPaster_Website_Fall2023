@@ -1,5 +1,5 @@
 export default function Home() {
-  return (
+  return (<>
     <div className="container">
       <h1 className="center site-title">AntiCopyPaster Plugin</h1>
       <p className="subtitle center">
@@ -20,7 +20,7 @@ export default function Home() {
         two extraction support provided by the built-in IntelliJ extractor to
         full detection coverage of type two with almost full extraction coverage.
         This was accomplished through the implementation of a custom extractor
-        which functions by traversing the code's abstract syntax tree to look for
+        which functions by traversing the code&apos;s abstract syntax tree to look for
         a specific set of code patterns and structures.
       </p>
       <h3 className="title">New Extraction Flow</h3>
@@ -28,28 +28,46 @@ export default function Home() {
         After pasting a code segment, if its <a href="#judgement">worthy of
         extraction</a>, a notification will show up.
       </p>
-      <img src="/img/notification.png" />
+    </div>
+    <img src="/img/notification.png" />
+    <div className="container">
       <p>
         Viewing the recommendation opens an informative prompt.
       </p>
-      <img src="/img/prompt.png" />
+    </div>
+    <img src="/img/prompt.png" />
+    <div className="container">
       <p>
         Accepting the recommendation triggers a series of prompts that ask
         which specific duplicates you would like to extract.
       </p>
-      <img src="/img/selection.png" />
+    </div>
+    <img src="/img/selection.png" />
+    <div className="container">
       <p>
         And finally a prompt with suggested names will appear to name the newly
         extracted method.
       </p>
-      <img src="/img/naming.png" />
-      <h3 className="title">Sample - Type One</h3>
+    </div>
+    <img src="/img/naming.png" />
+    <div className="container">
+      <h3 className="title"><span>Sample - Type One</span></h3>
       <p>
         The sample below shows an example of an automatic extraction of a type
         1a, 2b, and 1c clone:
       </p>
-      <img src="/img/typeOne.png" />
-      <h3 className="title">Settings</h3>
+    </div>
+    <img src="/img/typeOne.png" />
+    <div className="container">
+      <h3 className="title"><span>Sample - Type Two</span></h3>
+      <p>
+        The sample below shows an example of an automatic extraction of a type
+        2a, 2b, and 2d clone:
+      </p>
+    </div>
+    <img src="/img/typeTwo.png" />
+    <div className="container">
+      <h3 className="title"><span>Settings</span></h3>
       <p>
         In order to give the user more control, several new settings were
         introduced:
@@ -63,9 +81,10 @@ export default function Home() {
         </li>
         <li>
           <b>Model Sensitivity</b> &mdash; Should the aforementioned model be
-          selected, there's also a setting to adjust how sensitive it is. In
+          selected, there&apos;s also a setting to adjust how sensitive it is. In
           other words, this setting enables customizability over how
           frequently extractions get recommended.
+          <img src="/img/aiSettings.png" />
         </li>
         <li>
           <b>Name Recommendation Model</b> &mdash; The plugin can now use an
@@ -85,7 +104,7 @@ export default function Home() {
           extracted method may have.
         </li>
       </ul>
-      <img src="/img/settings.png" />
     </div>
-  );
-};
+    <img src="/img/settings.png" />
+  </>);
+}

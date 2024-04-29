@@ -46,6 +46,15 @@ h1 + .subtitle {
 }
 
 h3.title {
-  margin: 0;
-  display: inline-block;
+  border-bottom: none;
+}
+
+h3.title span {
+  border-bottom: 1px solid;
+}
+
+img {
+  display: block;
+  margin: auto;
+  max-width: calc(100%);
 }
