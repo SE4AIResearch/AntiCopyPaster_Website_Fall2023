@@ -34,27 +34,27 @@ export default function Home() {
         extraction</a>, a notification will show up.
       </p>
     </div>
-    <img src="/img/notification.png" />
+    <img className="showcase" src="/img/notification.png" />
     <div className="container">
       <p>
         Viewing the recommendation opens an informative prompt.
       </p>
     </div>
-    <img src="/img/prompt.png" />
+    <img className="showcase" src="/img/prompt.png" />
     <div className="container">
       <p>
         Accepting the recommendation triggers a series of prompts that ask
         which specific duplicates you would like to extract.
       </p>
     </div>
-    <img src="/img/selection.png" />
+    <img className="showcase" src="/img/selection.png" />
     <div className="container">
       <p>
         And finally a prompt with suggested names will appear to name the newly
         extracted method.
       </p>
     </div>
-    <img src="/img/naming.png" />
+    <img className="showcase" src="/img/naming.png" />
     <div className="container">
       <h3 className="title"><span>Sample - Type One</span></h3>
       <p>
@@ -62,7 +62,7 @@ export default function Home() {
         1a, 2b, and 1c clone:
       </p>
     </div>
-    <img src="/img/typeOne.png" />
+    <img className="showcase" src="/img/typeOne.png" />
     <div className="container">
       <h3 className="title"><span>Sample - Type Two</span></h3>
       <p>
@@ -70,7 +70,7 @@ export default function Home() {
         2a, 2b, and 2d clone:
       </p>
     </div>
-    <img src="/img/typeTwo.png" />
+    <img className="showcase" src="/img/typeTwo.png" />
     <div className="container">
       <h3 className="title"><span>Settings</span></h3>
       <p>
@@ -89,7 +89,7 @@ export default function Home() {
           selected, there&apos;s also a setting to adjust how sensitive it is. In
           other words, this setting enables customizability over how
           frequently extractions get recommended.
-          <img src="/img/aiSettings.png" />
+          <img className="showcase" src="/img/aiSettings.png" />
         </li>
         <li>
           <b>Name Recommendation Model</b> &mdash; The plugin can now use an
@@ -110,6 +110,35 @@ export default function Home() {
         </li>
       </ul>
     </div>
-    <img src="/img/settings.png" />
+    <img className="showcase" src="/img/settings.png" />
+    <div className="container">
+      <h2 className="title">Contributers</h2>
+      <div className="contributers">
+        <div className="contributer">
+          <img className="contributer" src="/img/contributers/matta.png" />
+          <p>Matt Angelakos</p>
+        </div>
+        <div className="contributer">
+          <img className="contributer" src="/img/contributers/jacoba.png" />
+          <p>Jacob Ashkenas</p>
+        </div>
+        <div className="contributer">
+          <img className="contributer" src="/img/contributers/markf.png" />
+          <p>Mark Falletta</p>
+        </div>
+        <div className="contributer">
+          <img className="contributer" src="/img/contributers/robertf.png" />
+          <p>Robert Feliciano</p>
+        </div>
+        <div className="contributer">
+          <img className="contributer" src="/img/contributers/caving.png" />
+          <p>Cavin Gada</p>
+        </div>
+        <div className="contributer">
+          <img className="contributer" src="/img/contributers/dimitrih.jpg" />
+          <p>Dimitri Haralampopoulos</p>
+        </div>
+      </div>
+    </div>
   </>);
 }

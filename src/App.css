@@ -53,10 +53,28 @@ h3.title span {
   border-bottom: 1px solid;
 }
 
-img {
+img.showcase {
   display: block;
   margin: auto;
   max-width: calc(100%);
+}
+
+div.contributer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  background-color: #eee;
+}
+
+div.contributer p {
+  font-weight: bold;
+}
+
+img.contributer {
+  aspect-ratio: 1;
+  object-fit: cover;
+  width: 100px;
+  margin-right: 1rem;
 }
 
 .ghbtns {
