@@ -58,3 +58,40 @@ img {
   margin: auto;
   max-width: calc(100%);
 }
+
+.ghbtns {
+  display: flex;
+}
+
+iframe {
+  border: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.download-btn {
+  display: block;
+  padding: 3px 10px 3px 8px;
+  margin-right: 2rem;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  border-radius: 4px;
+  background-color: #eee;
+  background-image: linear-gradient(to bottom, #fcfcfc 0, #eee 100%);
+  background-repeat: no-repeat;
+  border: 1px solid #d5d5d5;
+  color: #333;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.download-btn:hover {
+  text-decoration: none;
+  background-color: #ddd;
+  background-image: linear-gradient(to bottom, #eee 0, #ddd 100%);
+  border-color: #ccc;
+}

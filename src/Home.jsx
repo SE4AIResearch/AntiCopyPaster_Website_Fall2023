@@ -5,6 +5,11 @@ export default function Home() {
       <p className="subtitle center">
         Fall 2023 &rarr; Spring 2024 Extensions
       </p>
+      <div className="ghbtns">
+        <a className="download-btn" href="https://github.com/refactorings/anti-copy-paster/releases/latest" target="_blank" rel="noreferrer">Download</a>
+        <iframe src="https://ghbtns.com/github-btn.html?user=refactorings&repo=anti-copy-paster&type=star&count=true&size=large" width="140" height="30" title="GitHub"></iframe>
+        <iframe src="https://ghbtns.com/github-btn.html?user=refactorings&repo=anti-copy-paster&type=fork&count=true&size=large" width="140" height="30" title="GitHub"></iframe>
+      </div>
       <h2 className="title">About</h2>
       <p>
         AntiCopyPaster is
@@ -23,7 +28,7 @@ export default function Home() {
         which functions by traversing the code&apos;s abstract syntax tree to look for
         a specific set of code patterns and structures.
       </p>
-      <h3 className="title">New Extraction Flow</h3>
+      <h3 className="title"><span>New Extraction Flow</span></h3>
       <p>
         After pasting a code segment, if its <a href="#judgement">worthy of
         extraction</a>, a notification will show up.
